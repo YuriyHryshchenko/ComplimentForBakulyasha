@@ -232,13 +232,6 @@ h6 {
   color: #fff;
 }
 
-.card__subtext span {
-  font-style: italic;
-  -webkit-transition: color 0.3s ease 0s;
-  -o-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-}
-
 .card__face-back {
   background-color: #f3f3f3;
   -webkit-transform: rotateY(180deg);
@@ -335,7 +328,7 @@ h6 {
   }
 
   .card__link {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .card__text {
@@ -381,7 +374,7 @@ h6 {
   }
 
   .card__text {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -488,36 +481,32 @@ h6 {
     }
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7857142857rem  +  0.4464285714vw , 1rem )) {
+@supports (font-size: clamp( 0.875rem , 0.6071428571rem  +  1.3392857143vw , 1.25rem )) {
     .card__link {
-      font-size: clamp( 0.875rem , 0.7857142857rem  +  0.4464285714vw , 1rem );
+      font-size: clamp( 0.875rem , 0.6071428571rem  +  1.3392857143vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7857142857rem  +  0.4464285714vw , 1rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.6071428571rem  +  1.3392857143vw , 1.25rem )) {
     .card__link {
-      font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 28);
+      font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 28);
     }
 }
 
-@supports (font-size: clamp( 1rem , 0.9107142857rem  +  0.4464285714vw , 1.125rem )) {
+@supports (font-size: clamp( 0.875rem , 0.6964285714rem  +  0.8928571429vw , 1.125rem )) {
     .card__text {
-      font-size: clamp( 1rem , 0.9107142857rem  +  0.4464285714vw , 1.125rem );
+      font-size: clamp( 0.875rem , 0.6964285714rem  +  0.8928571429vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 1rem , 0.9107142857rem  +  0.4464285714vw , 1.125rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.6964285714rem  +  0.8928571429vw , 1.125rem )) {
     .card__text {
-      font-size: calc(1rem + 0.125 * (100vw - 20rem) / 28);
+      font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 28);
     }
 }
 }
 
 @media (any-hover: hover) {
-  .card__subtext span:hover {
-    color: #212112;
-  }
-
   .card__link:hover {
     color: #212112;
   }
